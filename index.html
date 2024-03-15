@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Футболчик</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="" class="header__logo">Футбольчик</a>
+        <nav data-da=".header, 767, 2" class="header-menu menu">
+          <div class="menu-body">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="" class="menu-link">Главная</a></li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Внутренняя про игру</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button type="button" class="actions-button button" data-modal-btn="my_modal" href="#">Кнопка</button>
+        <button class="icon-menu" type="button">
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="home">
+        <div class="home__container">
+          <div class="home__body">
+            <div class="home__content">
+              <h1 class="home-title">Любишь футбол?</h1>
+              <div class="home-text">
+                <p>Получи мяч на первую игру </p>
+              </div>
+              <div class="home-actions">
+                <button type="button" class="actions-button button" data-modal-btn="my_modal" href="#">Получить мяч</button>
+              </div>
+            </div>
+            <div class="home__images">
+              <p>тематические<br>
+                фоновое изображение <br>
+                + PNG на прозрачном фоне</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="startGame">
+        <div class="startGame__container">
+          <div class="startGame__body">
+            <h2 class="startGame__title">Начни игру с выбора мяча</h2>
+            <div class="startGame__text">
+              <p>Любой спорт с чего-то начинается. Мы предлагаем ознакомиться с ассортиментом наших фирменных игровых мячей и выбрать свой. Ворвись в игру с максимальным преимуществом и обойди всех соперников с бонусами и отличным настроением.</p>
+            </div>
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__img">
+                      <p>png мяча</p>
+                    </div>
+                    <div class="slide__info">
+                      <h3>Гигамяч</h3>
+                      <p>отличный выбор для новичка</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__img">
+                      <p>png мяча</p>
+                    </div>
+                    <div class="slide__info">
+                      <h3>Гигамяч</h3>
+                      <p>отличный выбор для новичка</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__img">
+                      <p>png мяча</p>
+                    </div>
+                    <div class="slide__info">
+                      <h3>Гигамяч</h3>
+                      <p>отличный выбор для новичка</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__img">
+                      <p>png мяча</p>
+                    </div>
+                    <div class="slide__info">
+                      <h3>Гигамяч</h3>
+                      <p>отличный выбор для новичка</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide__body">
+                    <div class="slide__img">
+                      <p>png мяча</p>
+                    </div>
+                    <div class="slide__info">
+                      <h3>Гигамяч</h3>
+                      <p>отличный выбор для новичка</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-modal-window="my_modal" class="pop-up">
+      <div class="pop-up__container">
+        <div class="pop-up__body">
+          <p>Залишити замовлення</p>
+          <div class="form">
+            <form action="./files/sendmail.php" id="form" class="form__body">
+              <input type="text" class="form-input _req" id="name" name="searchString" placeholder="Ваше имя"
+                autocomplete="off">
+              <input id="formEmail" type="text" name="emaill" class="form-input _req _email" placeholder="E-mail">
+              <div class="btn-articles">
+              </div>
+              <button type="submit" class="form-btn button">Оформить заказ</button>
+            </form>
+          </div>
+          <div class="pop-up__close">&#10006</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/DynamicAdapt.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
